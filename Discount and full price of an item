@@ -1,0 +1,14 @@
+#Function for discount and price
+
+def dis(price, discount):
+    ds = price*(discount/100)
+    sp = price-ds
+    sp = round(sp, 2)
+    return sp
+#original price user input
+ori_price = int(input("Enter Original Price : "))
+
+#discount price user input
+dis_per = int(input("Enter Discount Percentage : "))
+
+print(dis(ori_price, dis_per))
